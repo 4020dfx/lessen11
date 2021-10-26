@@ -221,7 +221,7 @@ body {
    border: 1px solid rgba(242, 114, 111, 0);
 }
 
-.button:hover,.button-down:hover {
+.button:hover, .button-down:hover {
    border: 1px solid rgba(242, 114, 111, 1);
    color: rgba(242, 114, 111, 1);
    background: #fff;
@@ -403,7 +403,7 @@ body {
 /* хххххххххххххххххххххххххххххххххххххххххххххххххххххххххххх */
 
 .home {
-   background: url(../img/BG-Image.png) 100% top no-repeat;
+   background: url(../img/BG-Image.png) 0 0 no-repeat #29c3be;
    padding: 26px 0 0;
    border: 2px solid #fff;
 }
@@ -467,13 +467,6 @@ body {
    margin: 0 12px 0 0;
 }
 
-.home-decor {
-   position: relative;
-   left: 1020px;
-   top: -80px;
-   z-index: 10;
-}
-
 .header-offer {
    font-size: 56px;
    font-weight: 900;
@@ -495,8 +488,18 @@ body {
    border-radius: 40px;
    padding: 100px 87px 0px;
    color: #fff;
-   margin: -320px 0 0 0;
+   /* margin: -320px 0 0 0; */
    position: relative;
+}
+
+.dachshund::before {
+   content: url("../img/stylizecircles.png");
+   /* background: url(../img/stylizecircles.png) 0 0 no-repeat; */
+   max-width: 201px;
+   max-height: 317px;
+   position: absolute;
+   top: -12%;
+   left: 89%;
 }
 
 .dachshund__text {
@@ -530,10 +533,12 @@ body {
 
 .dachshund__foto {
    max-width: 846px;
+   /* max-width: 100%; */
    filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
    border-radius: 40px;
    margin: 0 0 -120px 0;
-   z-index: 10;
+   /* z-index: 10; */
    top: 0;
    left: 0;
+   position: relative;
 }
